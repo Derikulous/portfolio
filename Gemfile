@@ -2,11 +2,26 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
-gem 'rails_12factor'
-gem 'pg'
+gem 'unicorn'
 gem 'font-awesome-sass'
-gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass'
+gem 'foundation-rails'
 gem 'skrollr-rails'
+gem 'devise'
+gem 'pundit'
+gem 'rakismet'
+gem 'figaro'
+gem 'font-awesome-sass'
+gem 'friendly_id'
+gem 'forem', :github => "radar/forem", :branch => "rails4"
+gem 'forem-redcarpet', :git => "git://github.com/radar/forem-redcarpet"
+gem 'will_paginate', '3.0.5'
+gem 'cancan', git: "https://github.com/nukturnal/cancan.git"
+gem 'rails_admin'
+
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -37,20 +52,3 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :test do
-end
-
-group :development, :test do
-end
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
