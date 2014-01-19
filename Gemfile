@@ -10,13 +10,14 @@ gem 'devise'
 gem 'pundit'
 gem 'rakismet'
 gem 'figaro'
-gem 'font-awesome-sass'
 gem 'friendly_id'
 gem 'forem', :github => "radar/forem", :branch => "rails4"
 gem 'forem-redcarpet', :git => "git://github.com/radar/forem-redcarpet"
 gem 'will_paginate', '3.0.5'
 gem 'cancan', git: "https://github.com/nukturnal/cancan.git"
 gem 'rails_admin'
+gem 'how_to'
+gem 'bootstrap-sass'
 
 group :production do
   gem 'rails_12factor'

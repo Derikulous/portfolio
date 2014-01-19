@@ -7,10 +7,8 @@ Portfolio4::Application.routes.draw do
   #
   # We ask that you don't use the :as option here, as Forem relies on it being the default of "forem"
   mount Forem::Engine, :at => '/forums'
+  mount HowTo::Engine => "/how_to"
 
-  
-  
-  
   devise_for :users
   root 'home#index'
 

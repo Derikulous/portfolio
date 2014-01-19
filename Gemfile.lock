@@ -57,7 +57,11 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.14)
+    awesome_nested_set (2.1.6)
+      activerecord (>= 3.0.0)
     bcrypt-ruby (3.1.2)
+    bootstrap-sass (2.3.2.0)
+      sass (~> 3.2)
     builder (3.1.4)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -89,9 +93,16 @@ GEM
     friendly_id (5.0.2)
       activerecord (~> 4.0.0)
     gemoji (1.1.2)
+    globalize3 (0.1.0)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
     haml (4.0.5)
       tilt
     hike (1.2.3)
+    how_to (0.0.5)
+      awesome_nested_set
+      globalize3
+      rails (>= 3.1.0)
     i18n (0.6.5)
     jbuilder (1.5.2)
       activesupport (>= 3.0.0)
@@ -231,6 +242,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   cancan!
   coffee-rails (~> 4.0.0)
   devise
@@ -240,6 +252,7 @@ DEPENDENCIES
   forem-redcarpet!
   foundation-rails
   friendly_id
+  how_to
   jbuilder (~> 1.2)
   jquery-rails
   pg
