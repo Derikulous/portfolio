@@ -15,6 +15,12 @@
 //= require foundation
 //= require turbolinks
 //= require forem
-//= require_tree .
+//= require handlebars
+//= require ember
+//= require ember-data
+//= require_self
+//= require raffler
+//= require_tree
+
 
 $(document).foundation();
