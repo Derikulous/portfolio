@@ -20,7 +20,7 @@
 //= require ember-data
 //= require_self
 //= require raffler
-//= require_tree
-
+Raffler = Ember.Application.create();
+//= require tree
 
 $(document).foundation();
