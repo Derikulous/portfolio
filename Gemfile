@@ -18,7 +18,6 @@ gem 'cancan', git: "https://github.com/nukturnal/cancan.git"
 gem 'rails_admin'
 gem 'how_to'
 gem 'bootstrap-sass'
-gem 'ember-rails'
 
 group :production do
   gem 'rails_12factor'
